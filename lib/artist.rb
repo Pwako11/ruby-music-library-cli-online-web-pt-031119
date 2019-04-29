@@ -3,11 +3,11 @@
 # require_relative './persistable.rb'
 
 class Artist
-  # extend Findable::ClassMethods
+  extend Findable::ClassMethods
   # extend Persistable::ClassMethods
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
-  extend Findable
+  
   
   attr_accessor :name, :songs
   attr_reader :songs
