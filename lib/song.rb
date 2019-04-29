@@ -49,12 +49,12 @@ class Song
     @genre = genre
   end
     
-  # def song.create(name) 
-  #     new(name).tap {|song| song.save}
+  def song.create(name) 
+       new(name).tap {|song| song.save}
   #     song = new(name) 
   #     song.save
   #     song 
-  # end
+  end
    
    def self.find_or_create_by_name(name)
       find_by_name(name)|| create(name)
