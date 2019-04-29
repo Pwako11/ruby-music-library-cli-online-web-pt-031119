@@ -7,7 +7,7 @@ class Genre
   # extend Persistable::ClassMethods
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
-  extend Concerns::Findable
+  extend Findable
   attr_accessor :name
   attr_reader :songs
   
