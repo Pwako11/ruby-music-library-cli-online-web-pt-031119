@@ -8,12 +8,14 @@ class Genre
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
   
-  attr_accessor :name, :songs
+  attr_accessor :name
+  attr_reader :songs
+  
     @@all = []
     
     def initialize (name)
       @name = name 
-      save
+      @songs = []
     end 
     
     def self.all
