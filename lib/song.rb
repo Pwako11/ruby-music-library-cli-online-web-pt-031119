@@ -50,10 +50,9 @@ class Song
   end
     
   def self.create(name) 
-       new(name).tap {|song| song.save}
-  #     song = new(name) 
-  #     song.save
-  #     song 
+       song = new(name) 
+       song.save
+       song 
   end
    
    def self.find_or_create_by_name(name)
