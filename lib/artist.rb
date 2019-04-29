@@ -7,6 +7,7 @@ class Artist
   # extend Persistable::ClassMethods
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
+  extend Concerns::Findable
   
   attr_accessor :name, :songs
   attr_reader :songs
