@@ -4,7 +4,7 @@ require_relative './findable.rb'
 
 class Song
   extend Findable::ClassMethods
-  extend Concerns::ClassMethods
+  extend Concerns::Findable
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
   
