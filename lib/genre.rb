@@ -34,12 +34,17 @@ class Genre
       @@all.size 
     end
     
-    def self.find_by_name(name)
-      @@all.detect {|genre| genre.name == name}
-    end
     def self.create(name)
       genre = new(name)
       genre.save
       genre
     end 
-end 
+    
+    def self.find_by_name(name)
+      @@all.detect {|genre| genre.name == name}
+    end
+    
+    def artists
+      songs.collect{|s| s.artist}.uniq 
+    end 
+  end 
