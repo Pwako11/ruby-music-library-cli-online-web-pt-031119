@@ -49,7 +49,7 @@ class Song
     @genre = genre
   end
     
-  def song.create(name) 
+  def self.create(name) 
        new(name).tap {|song| song.save}
   #     song = new(name) 
   #     song.save
