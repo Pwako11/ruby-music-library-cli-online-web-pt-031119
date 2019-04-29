@@ -1,4 +1,4 @@
-# require_relative './findable.rb'
+require_relative './findable.rb'
 # require_relative './nameable.rb'
 # require_relative './persistable.rb'
 
