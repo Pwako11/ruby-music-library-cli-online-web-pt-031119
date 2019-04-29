@@ -1,3 +1,6 @@
+require 'bundler'
+Bundler.require
+
 module Findable
   module ClassMethods
     def find_by_name(name)
@@ -8,3 +11,4 @@ module Findable
     end 
   end
 end 
+
