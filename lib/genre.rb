@@ -37,4 +37,5 @@ class Genre
     def self.find_by_name(name)
       @@all.detect {|genre| genre.name == name}
     end
+    
 end 
