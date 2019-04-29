@@ -4,7 +4,7 @@ require_relative './findable.rb'
 
 class Artist
   extend Findable::ClassMethods
-  # extend Persistable::ClassMethods
+  extend Concerns::ClassMethods
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
   
