@@ -4,7 +4,7 @@ require_relative './findable.rb'
 
 class Genre
   extend Findable::ClassMethods
-  extend Concerns::ClassMethods
+  extend Concerns::Findable
   # extend Persistable::ClassMethods
   # extend Nameable::ClassMethods
   # include Persistable::InstanceMethods
